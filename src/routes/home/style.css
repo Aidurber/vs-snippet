@@ -1,5 +1,14 @@
 .home {
-	padding: 56px 20px;
-	min-height: 100%;
-	width: 100%;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.col {
+  flex-direction: column;
+  flex: 1;
+  padding: 0 1em;
 }
