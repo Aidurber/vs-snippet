@@ -31,6 +31,7 @@ const SnippetForm = () => {
 
   useEffect(() => {
     setStoredValue({ title, prefix, description, code });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [title, prefix, description, code]);
 
   const handleCopy = useCallback(() => {
@@ -87,6 +88,7 @@ const SnippetForm = () => {
         </label>
         <textarea
           id="code"
+          rows="20"
           name="code"
           class={style.formInput}
           onChange={(e) => setCode(e.target.value)}
