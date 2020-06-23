@@ -8,7 +8,7 @@ const buildVsCodeSnippet = ({ title, code, prefix, description }) => {
     [title]: {
       prefix,
       description,
-      body: code.split("\n"),
+      body: (code || "").split("\n"),
     },
   };
 };
